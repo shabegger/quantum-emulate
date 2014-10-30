@@ -6,7 +6,7 @@ namespace Quantum.Emulate
     {
         #region Static Members
 
-        private static ComplexMatrix pauliX = new ComplexMatrix(new Complex[][] {
+        public static readonly ComplexMatrix PauliX = new ComplexMatrix(new Complex[][] {
             new Complex[] { new Complex(0, 0), new Complex(1, 0) },
             new Complex[] { new Complex(1, 0), new Complex(0, 0) }
         });
@@ -15,7 +15,7 @@ namespace Quantum.Emulate
 
         #region Constructors
 
-        public PauliXGate() : base(pauliX) { }
+        public PauliXGate() : base(PauliX) { }
 
         #endregion
     }

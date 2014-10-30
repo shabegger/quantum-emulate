@@ -6,7 +6,7 @@ namespace Quantum.Emulate
     {
         #region Static Members
 
-        private static ComplexMatrix hadamard = new ComplexMatrix(new Complex[][] {
+        public static readonly ComplexMatrix Hadamard = new ComplexMatrix(new Complex[][] {
             new Complex[] { new Complex(1 / System.Math.Sqrt(2), 0), new Complex(1 / System.Math.Sqrt(2), 0) },
             new Complex[] { new Complex(1 / System.Math.Sqrt(2), 0), new Complex(-1 / System.Math.Sqrt(2), 0) }
         });
@@ -15,7 +15,7 @@ namespace Quantum.Emulate
 
         #region Constructors
 
-        public HadamardGate() : base(hadamard) { }
+        public HadamardGate() : base(Hadamard) { }
 
         #endregion
     }

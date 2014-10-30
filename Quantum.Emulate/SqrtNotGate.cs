@@ -6,7 +6,7 @@ namespace Quantum.Emulate
     {
         #region Static Members
 
-        private static ComplexMatrix sqrtNot = new ComplexMatrix(new Complex[][] {
+        public static readonly ComplexMatrix SqrtNot = new ComplexMatrix(new Complex[][] {
             new Complex[] { new Complex(1 / System.Math.Sqrt(2), 0), new Complex(-1 / System.Math.Sqrt(2), 0) },
             new Complex[] { new Complex(1 / System.Math.Sqrt(2), 0), new Complex(1 / System.Math.Sqrt(2), 0) }
         });
@@ -15,7 +15,7 @@ namespace Quantum.Emulate
 
         #region Constructors
 
-        public SqrtNotGate() : base(sqrtNot) { }
+        public SqrtNotGate() : base(SqrtNot) { }
 
         #endregion
     }
